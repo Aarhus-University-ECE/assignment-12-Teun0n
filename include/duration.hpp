@@ -5,11 +5,12 @@
 class duration
 {
     private:
-        int t;
+        int time;
         
     public:
         Duration();//constructur
+        Duration(int t);//constructur where time=t
         ~Duration();//deconstructer
-        getDuration();
+        getDuration();//returns time
 };
 #endif //duration_h

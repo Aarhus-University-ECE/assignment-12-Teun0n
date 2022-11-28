@@ -5,24 +5,41 @@
 
 int Duration::getDuration()//returns private integer time to public
 {
-
+return t;
 }
 
-Duration::Duration()//public constructor
+void Duration::Duration()//public constructor
 {
-t=0;
+    time=0;
 }
 
-Duration::Duration(int t){//public constructor which sets time t
-
-}
-
-void Duration::tick()//adds 1 to time, doesn't return any value
+void Duration::Duration(int t)//public constructor which sets time t
 {
+    assert(t>=0);
+    time=t;
 
+}
+
+bool Duration::tick()//adds 1 to time, doesn't return any value
+{
+    time++;
+    if(time<=t){
+        return true;
+    }
+    else{
+        return false;
+    }
 }
 
 void Duration::tick(int dt)//adds input dt to time, doesn't return any value
 {
+    assert(t>=0);
+    time+=dt;
+}
 
+void Duration::SetAlarm(int t)//Sets alarm
+{
+    assert(t>=time);
+
+    bool AlarmHasBeenSet=true;
 }
