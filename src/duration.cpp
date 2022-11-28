@@ -5,7 +5,7 @@
 
 int Duration::getDuration()//returns private integer time to public
 {
-return t;
+return time;
 }
 
 void Duration::Duration()//public constructor
@@ -17,7 +17,7 @@ void Duration::Duration(int t)//public constructor which sets time t
 {
     assert(t>=0);
     time=t;
-
+    t=0;
 }
 
 bool Duration::tick()//adds 1 to time, doesn't return any value
@@ -25,6 +25,8 @@ bool Duration::tick()//adds 1 to time, doesn't return any value
     time++;
     if(time<=t){
         return true;
+        t=0;
+        AlarmHasBeenSet=False;
     }
     else{
         return false;
