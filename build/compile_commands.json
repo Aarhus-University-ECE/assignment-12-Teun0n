@@ -1,0 +1,17 @@
+[
+{
+  "directory": "C:/C C++/assignment-12-Teun0n/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/mylib.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\mylib.dir\\src\\duration.cpp.obj -c \"C:\\C C++\\assignment-12-Teun0n\\src\\duration.cpp\"",
+  "file": "C:/C C++/assignment-12-Teun0n/src/duration.cpp"
+},
+{
+  "directory": "C:/C C++/assignment-12-Teun0n/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/main.dir/includes_CXX.rsp -g -g -O0 -std=gnu++14 -o CMakeFiles\\main.dir\\src\\main.cpp.obj -c \"C:\\C C++\\assignment-12-Teun0n\\src\\main.cpp\"",
+  "file": "C:/C C++/assignment-12-Teun0n/src/main.cpp"
+},
+{
+  "directory": "C:/C C++/assignment-12-Teun0n/build/tests",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/tests.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\tests.dir\\src\\tests.cpp.obj -c \"C:\\C C++\\assignment-12-Teun0n\\tests\\src\\tests.cpp\"",
+  "file": "C:/C C++/assignment-12-Teun0n/tests/src/tests.cpp"
+}
+]
