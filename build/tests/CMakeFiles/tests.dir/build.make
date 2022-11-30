@@ -92,6 +92,7 @@ tests_EXTERNAL_OBJECTS =
 
 tests/tests.exe: tests/CMakeFiles/tests.dir/src/tests.cpp.obj
 tests/tests.exe: tests/CMakeFiles/tests.dir/build.make
+tests/tests.exe: libmylib.a
 tests/tests.exe: tests/CMakeFiles/tests.dir/linklibs.rsp
 tests/tests.exe: tests/CMakeFiles/tests.dir/objects1.rsp
 tests/tests.exe: tests/CMakeFiles/tests.dir/link.txt

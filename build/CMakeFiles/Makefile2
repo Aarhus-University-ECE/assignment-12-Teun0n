@@ -904,7 +904,7 @@ CMakeFiles/main.dir/clean:
 # Target rules for target tests/CMakeFiles/tests.dir
 
 # All Build rule for target.
-tests/CMakeFiles/tests.dir/all:
+tests/CMakeFiles/tests.dir/all: CMakeFiles/mylib.dir/all
 	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests\CMakeFiles\tests.dir\build.make tests/CMakeFiles/tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\C C++\assignment-12-Teun0n\build\CMakeFiles" --progress-num=5,6 "Built target tests"
@@ -912,7 +912,7 @@ tests/CMakeFiles/tests.dir/all:
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\C C++\assignment-12-Teun0n\build\CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\C C++\assignment-12-Teun0n\build\CMakeFiles" 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests/CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\C C++\assignment-12-Teun0n\build\CMakeFiles" 0
 .PHONY : tests/CMakeFiles/tests.dir/rule

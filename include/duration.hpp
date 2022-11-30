@@ -1,15 +1,23 @@
-#ifdef _DURATION_H_
-#define _DURATION_H_
+#ifndef DURATION_H
+#define DURATION_H
 
-class duration
+class Duration
 {
     private:
         int time;
+        int alarm;
+        bool AlarmHasBeenSet;
     public:
         Duration();//constructur
         Duration(int t);//constructur where time=t
         ~Duration();//deconstructer
-        getDuration();//returns time
-        SetAlarm(int t);
+
+        int getDuration();//returns time
+
+        void SetAlarm(int t);//sets alarm
+        bool checkAndUpdateAlarm();
+
+        bool tick();
+        bool tick(int dt);
 };
 #endif //duration_h
