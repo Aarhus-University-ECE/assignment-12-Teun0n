@@ -10,25 +10,25 @@ return time;//time is returned
 
 Duration::Duration()//public constructor
 {
-    time=0;
-    AlarmHasBeenSet=false;
+    time=0;//time starts at 0
+    AlarmHasBeenSet=false;//no alarm has been set
 }
 Duration::Duration(int t)//public constructor which sets time t
 {
-    assert(t>=0);
-    time=t;
-    AlarmHasBeenSet=false;
+    assert(t>=0);//time must start at a value equal to or greater than 0
+    time=t;//time is set to t
+    AlarmHasBeenSet=false;//no alarm has been set
 }
 
-bool Duration::tick()//adds 1 to time, doesn't return any value
+bool Duration::tick()//adds 1 to time, then checks and updates possible alarm
 {
     time++;//1 is added to time
     
-    return checkAndUpdateAlarm();//Alarm is checked
+    return checkAndUpdateAlarm();//alarm is checked
 
 }
 
-bool Duration::tick(int dt)//adds input dt to time, doesn't return any value
+bool Duration::tick(int dt)//adds input dt to time,  then checks and updates possible alarm
 {
     assert(dt>=0);//dt must be greater than or equal to zero
     time+=dt;//dt is added to time
@@ -45,14 +45,14 @@ void Duration::SetAlarm(int t)//Sets alarm and sets boolean AlarmHasBeenSet to t
 }
 
 bool Duration::checkAndUpdateAlarm(){ //checks if alarm has been set, and if so if time is equal to or greater than time.
-    if(AlarmHasBeenSet==false){
-        return false;
+    if(AlarmHasBeenSet==false){//checks if alarm has been set
+        return false;//if not false is returned
     }
-    else if(time>=alarm){
-        AlarmHasBeenSet = false;
-        return true;
+    else if(time>=alarm){//checks if alarm has been set, and if time is equal to or greater than alarm
+        AlarmHasBeenSet = false;//if true alarm is reset
+        return true;//and true is returned
     }
-    return false;
+    return false;//if alarm has been set, but is greater than time false is returned.
 }
 
 
